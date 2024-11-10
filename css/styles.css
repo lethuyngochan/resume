@@ -1,0 +1,117 @@
+.w-40 {
+    width: 40%;
+}
+
+.w-50 {
+    width: 50%;
+}
+
+.w-150 {
+    width: 150px;
+}
+
+.align-center {
+    align-items: center;
+}
+
+#about-me {
+    background: url(../img/about-me.svg) no-repeat right center;
+    background-size: cover;
+}
+
+.pt-60 {
+    padding-top: 60px;
+}
+
+.pt-100 {
+    padding-top: 100px;
+}
+
+.pb-100 {
+    padding-bottom: 100px;
+}
+
+.pink-circle {
+    width: 20px;
+    height: 20px;
+    background: #FCCBD2;
+    border-radius: 10px;
+    display: inline-block;
+    vertical-align: sub;
+}
+
+.container {
+    max-width: 1000px;
+    margin: auto;
+}
+
+.d-inline-block {
+    display: inline-block;
+}
+
+.grey-circle {
+    width: 20px;
+    height: 20px;
+    background: #F5EDE5;
+    border-radius: 10px;
+    display: inline-block;
+    vertical-align: sub;
+}
+
+.text-center {
+    text-align: center;
+}
+
+.text-right {
+    text-align: right;
+}
+
+.justify-center {
+    justify-content: center;
+}
+
+.right-border {
+    border-right: 1px solid #FCCBD2;
+}
+
+.left-border {
+    border-left: 1px solid #FCCBD2;
+}
+
+.mt-0 {
+    margin-top: 0;
+}
+
+.pink {
+    color: #FCCBD2;
+}
+
+.font-15 {
+    font-size: 1.5em;
+}
+
+.line-height-1 {
+    line-height: 1;
+}
+
+.left-border .line-height-1::before {
+    content: '';
+    width: 15px;
+    height: 15px;
+    display: block;
+    background: pink;
+    border-radius: 8px;
+    position: absolute;
+    left: -8px;
+}
+
+.right-border .line-height-1::before {
+    content: '';
+    width: 15px;
+    height: 15px;
+    display: block;
+    background: pink;
+    border-radius: 8px;
+    position: absolute;
+    right: -8px;
+}

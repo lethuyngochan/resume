@@ -1,0 +1,132 @@
+
+@font-face {
+    font-family: SVNGilroy;
+    src: url(../fonts/SVN-Gilroy-Regular.otf);
+}
+
+@font-face {
+    font-family: SVNGilroyBold;
+    src: url(../fonts/SVN-Gilroy-Heavy.otf);
+    font-weight: bold;
+}
+
+body {
+    font-family: SVNGilroy;
+    color: #272727;
+    font-size: 1.2em;
+    line-height: 1.8;
+    margin: 0;
+}
+
+a {
+    text-decoration: none;
+    color: #272727;
+}
+
+b {
+    font-family: SVNGilroyBold;
+}
+
+.d-flex {
+    display: flex;
+}
+
+.uppercase {
+    text-transform: uppercase;
+}
+
+.w-100 {
+    width: 100%;
+}
+
+.justify-between {
+    justify-content: space-between;
+}
+
+.p-30 {
+    padding: 30px;
+}
+
+.pl-30 {
+    padding-left: 30px;
+}
+
+.pl-10p {
+    padding-left: 10%;
+}
+
+.pl-50p {
+    padding-left: 50%;
+}
+
+.pl-5p {
+    padding-left: 5%;
+}
+
+.pr-5p {
+    padding-right: 5%;
+}
+
+.pr-10p {
+    padding-right: 10%;
+}
+
+.vertical-writing {
+    writing-mode: vertical-lr;
+    text-orientation: mixed;
+}
+
+.pos-abs {
+    position: absolute;
+}
+
+.pos-rel {
+    position: relative;
+}
+
+#banner .vertical-writing {
+    right: 30px;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+#banner {
+    background: url(../img/banner.svg) no-repeat;
+    padding: 300px 0 162px;
+}
+
+.font-3em {
+    font-size: 3em;
+    line-height: 1;
+}
+
+.m-0 {
+    margin: 0;
+}
+
+.primary-btn {
+    background: #272727;
+    padding: 15px 30px;
+    color: white;
+}
+
+.mb-30 {
+    margin-bottom: 30px;
+}
+
+.mt-50 {
+    margin-top: 50px;
+}
+
+.circle {
+    width: 10px;
+    height: 10px;
+    background: #272727;
+    border-radius: 5px;
+    margin: 20px 0;
+    display: inline-block;
+}
+
+.nowrap {
+    text-wrap: nowrap;
+}
