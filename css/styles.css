@@ -1,3 +1,7 @@
+.w-33 {
+    width: 33.33%;
+}
+
 .w-40 {
     width: 40%;
 }
@@ -17,6 +21,10 @@
 #about-me {
     background: url(../img/about-me.svg) no-repeat right center;
     background-size: cover;
+}
+
+.pt-20 {
+    padding-top: 20px;
 }
 
 .pt-60 {
@@ -132,109 +140,116 @@
     right: -8px;
 }
 
-.grid-container {
-    display: grid;
-    grid-template-columns: auto auto auto auto auto auto;
-    grid-template-rows: 250px 250px 250px;
-    gap: 10px;
-}
-
-.grid-container > a {
-    display: block;
-}
-
-.item {
-    overflow: hidden;
-}
-
-.item div {
-    width: 100%;
-    height: 100%;
-}
-
-.item:hover div {
-    transform: scale(1.1);
-    transition: 1s;
-}
-
-.item1 {
-    grid-row-start: 1;
-    grid-row-end: 3;
-    grid-column-start: 1;
-    grid-column-end: 3;
-}
-
-.item1 div {
-    background: url(../img/coinpool.jpg);
-    background-size: cover;
-}
-
-.item2 {
-    grid-column-start: 3;
-    grid-column-end: 5;
-}
-
-.item2 div {
-    background: url(../img/tomofinance.jpg);
-    background-size: cover;
-}
-
-.item3 div {
-    background: url(../img/bountykinds.jpg);
-    background-size: cover;
-}
-
-.item4 div {
-    background: url(../img/gemnode.jpg);
-    background-size: cover;
-}
-
-.item5 {
-    grid-row-start: 2;
-    grid-row-end: 4;
-    grid-column-start: 3;
-    grid-column-end: 5;
-}
-
-.item5 div {
-    background: url(../img/copytrade.jpg);
-    background-size: cover;
-}
-
-.item6 {
-    grid-column-start: 5;
-    grid-column-end: 7;
-}
-
-.item6 div {
-    background: url(../img/fany.jpg);
-    background-size: cover;
-}
-
-.item7 div {
-    background: url(../img/strict.jpg);
-    background-size: cover;
-}
-
-.item8 div {
-    background: url(../img/wraptag.jpg);
-    background-size: cover;
-}
-
-.item9 div {
-    background: url(../img/pampda.jpg);
-    background-size: cover;
-}
-
-.item10 div {
-    background: url(../img/phygitalx.jpg);
-    background-size: cover;
-}
-
 .pink-bg {
     background: #FCCBD2;
 }
 
 .contact .pink-bg {
     padding: 10px 100px 60px;
+}
+
+.contact a:hover {
+    color: white;
+    transition: 0.5s;
+}
+
+.overflow-hidden {
+    overflow: hidden;
+}
+
+#works a {
+    display: flex;
+    margin: 10px;
+    overflow: hidden;
+}
+
+#works a:hover img {
+    transform: scale(1.1);
+    transition: 1s;
+}
+
+.flex-direction-col {
+    flex-direction: column;
+}
+
+@media only screen and (max-width: 1024px) {
+    .pb-100 {
+        padding-bottom: 50px;
+    }
+    
+    .pr-10p {
+        padding-right: 5%;
+    }
+    .pl-10p {
+        padding-left: 5%;
+    }
+
+    #about-me {
+        background: #F5EDE5;
+    }
+}
+
+@media only screen and (max-width: 767px) {
+    .pt-100 {
+        padding-top: 60px;
+    }
+
+    .w-50 {
+        width: 100%;
+    }
+
+    #about-me .d-flex {
+        display: block;
+    }
+
+    .w-40 {
+        width: 90%;
+    }
+
+    .pl-60 {
+        padding-left: 10%;
+    }
+
+    .w-50.pl-60 {
+        width: 90%;
+    }
+
+    #my-skills {
+        display: block;
+        text-align: center;
+    }
+
+    #my-skills .pt-60 {
+        padding-top: 30px;
+    }
+
+    #my-skills .pt-100 {
+        padding-top: 0;
+    }
+
+    #my-skills .pl-5p {
+        padding-left: 0;
+    }
+
+    #works a {
+        margin: 5px;
+    }
+}
+
+@media only screen and (max-width: 480px) {
+    .showcase {
+        display: block;
+    }
+
+    .w-33 {
+        width: 100%;
+    }
+
+    .font-15 {
+        font-size: 1em;
+    }
+
+    .contact .pink-bg {
+        padding: 10px 15px 40px;
+    }
 }

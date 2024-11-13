@@ -13,6 +13,11 @@ html {
     font-weight: bold;
 }
 
+@font-face {
+    font-family: Baskervville;
+    src: url(../fonts/Baskervville-Regular.ttf);
+}
+
 body {
     font-family: SVNGilroy;
     color: #272727;
@@ -24,6 +29,11 @@ body {
 a {
     text-decoration: none;
     color: #272727;
+}
+
+a:hover {
+    color: #FCCBD2;
+    transition: 0.5s;
 }
 
 b {
@@ -42,6 +52,10 @@ b {
     width: 100%;
 }
 
+.baskervville {
+    font-family: Baskervville;
+}
+
 .justify-between {
     justify-content: space-between;
 }
@@ -50,8 +64,16 @@ b {
     padding: 30px;
 }
 
+.p-60 {
+    padding: 60px;
+}
+
 .pl-30 {
     padding-left: 30px;
+}
+
+.pl-60 {
+    padding-left: 60px;
 }
 
 .pl-10p {
@@ -88,14 +110,9 @@ b {
 }
 
 #banner .vertical-writing {
-    right: 30px;
+    right: 0;
     top: 50%;
     transform: translateY(-50%);
-}
-
-#banner {
-    background: url(../img/banner.svg) no-repeat;
-    padding: 300px 0 162px;
 }
 
 .font-3em {
@@ -113,6 +130,11 @@ b {
     color: white;
 }
 
+.primary-btn:hover {
+    background: #FCCBD2;
+    color: white;
+}
+
 .circle {
     width: 10px;
     height: 10px;
@@ -124,4 +146,30 @@ b {
 
 .nowrap {
     text-wrap: nowrap;
+}
+
+@media only screen and (max-width: 1024px) {
+    #banner .vertical-writing {
+        display: none;
+    }
+
+    .font-3em {
+        font-size: 2em;
+    }
+
+    .p-30 {
+        padding: 15px;
+    }
+}
+
+@media only screen and (max-width: 767px) {
+    #banner .d-flex {
+        display: block;
+    } 
+}
+
+@media only screen and (max-width: 480px) {
+    nav div.p-30 {
+        display: none;
+    }
 }
